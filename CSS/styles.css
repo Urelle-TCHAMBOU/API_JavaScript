@@ -1,0 +1,19 @@
+
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+.box {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 400px; 
+    height: 300px; 
+    margin: auto;
+    background-color: blue;
+    border: 2px solid #ccc;
+    border-radius: 8px; 
+    text-align: center; 
+}
