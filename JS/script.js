@@ -31,20 +31,20 @@ boxElement.addEventListener('mouseover', () => {
     // Anime la rotation de la boîte
     anime({
         targets: '#box',
-        rotate: '2turn', // Fait tourner la boîte de 360 degrés
-        duration: 1000, // Durée de l'animation en millisecondes
-        easing: 'linear' // Type d'accélération
+        rotate: '2turn', 
+        duration: 1000, 
+        easing: 'linear' 
     });
 });
 
-// Ajoute un écouteur d'événements pour la fin du survol
+
 boxElement.addEventListener('mouseleave', () => {
     // Arrête l'animation
     anime.remove('#box');
 });
-window.addEventListener('scroll', function() {
+boxElement.addEventListener('scroll', function() {
     console.log('L\'utilisateur a fait défiler la page.');
   });
-  window.addEventListener('resize', function() {
+  boxElement.addEventListener('resize', function() {
     console.log('La fenêtre a été redimensionnée.');
   });
